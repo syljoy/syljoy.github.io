@@ -1,12 +1,12 @@
 # Basic
-title: 潘柏信
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+title: Yunlong
+subtitle: Personal Blog
+description: Welcome！
 # 头像里面的标题
-avatarTitle: leopardpan
+avatarTitle: syljoy
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
+avatarDesc: Student / AI
+url: "syljoy.github.io"
 
 # Comment
 comment:
@@ -16,13 +16,13 @@ comment:
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    weibo: 123456789 
+    github: syljoy
     # zhihu: panpanleopard
     # juejin: xxx
-    jianshu: 2ada30d8d0f7
+    # jianshu: 2ada30d8d0f7
     # twitter: 
-    mail: leopardpan@icloud.com
+    mail: syljoy@163.com
 
 
 # 百度统计 
@@ -54,20 +54,21 @@ highlighter: rouge
 textColor: #FF0000
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
+cover_color: purple # 默认clear
 
 # The blog button should not be removed.
 blog_button:
-    title: 博客主页
+    title: HOME
+    description: Back to Home
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
+    - {title: Archive, description: archive, url: '/archive'}   
+    - {title: Tags, description: tags, url: '/tags'}      
+    - {title: About Me, description: about, url: '/about'}      
     
 
-# Pagination
+# 分页
 gems: [jekyll-paginate,jekyll-sitemap]
 paginate: 20
 paginate_path: "page/:num/"
