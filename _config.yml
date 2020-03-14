@@ -10,14 +10,13 @@ url: "syljoy.github.io"
 
 # Comment
 comment:
-    # disqus: leopard
     gitment: 
         owner: syljoy # Your GitHub username
         # The repo to store comments,
         repo: https://github.com/syljoy/syljoy.github.io
         client_id: e93e6183465cb2e1c657
         client_secret: 3995857626e4f96f9e01712bd68fb9d1aacca969
-        # 需要修改 comments.html中的client_id和client_secret
+    # disqus: leopard
     # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
