@@ -1,19 +1,20 @@
 <section class="post-comments">
 
-  {% if site.comment.gitment %}
-    <div id="gitmentContainer"></div>
-    <link rel="stylesheet" href="https://syljoy.github.io/css/gitment.css">
-    <script src="https://syljoy.github.io/js/gitment.js"></script>
+	{% if site.comment.gitalk %}
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  	<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-    var gitment = new Gitment({
-        owner: '{{ site.comment.gitment.owner }}',
-        repo: '{{ site.comment.gitment.repo }}',
-        oauth: {
-            client_id: '{{ site.comment.gitment.client_id }}',
-            client_secret: '{{ site.comment.gitment.client_secret }}',
-        },
-    });
-    gitment.render('gitmentContainer');
+    	var gitalk = new Gitalk({
+			clientID: '{{ site.comment.gitalk.clientID }}',
+			clientSecret: '{{ site.comment.gitalk.clientSecret }}',
+			repo: '{{ site.comment.gitalk.repo }}',
+			owner: '{{ site.comment.gitalk.owner }}',
+			admin: ['{{ site.comment.gitalk.admin }}'],
+			id: location.pathname,      // Ensure uniqueness and length less than 50
+			distractionFreeMode: false  // Facebook-like distraction free mode
+		})
+		gitalk.render('gitalk-container')
     </script>
   {% endif %}
 
