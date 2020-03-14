@@ -12,8 +12,7 @@ url: "syljoy.github.io"
 comment:
     # disqus: leopard
     gitment: 
-        # Your GitHub username
-        owner: syljoy
+        owner: syljoy # Your GitHub username
         # The repo to store comments,
         repo: https://github.com/syljoy/syljoy.github.io
         client_id: e93e6183465cb2e1c657
