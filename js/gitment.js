@@ -1,70 +1,70 @@
 var Gitment =
 /******/ (function(modules) { // webpackBootstrap
-/******/  // The module cache
-/******/  var installedModules = {};
+/******/    // The module cache
+/******/    var installedModules = {};
 /******/
-/******/  // The require function
-/******/  function __webpack_require__(moduleId) {
+/******/    // The require function
+/******/    function __webpack_require__(moduleId) {
 /******/
-/******/    // Check if module is in cache
-/******/    if(installedModules[moduleId])
-/******/      return installedModules[moduleId].exports;
+/******/        // Check if module is in cache
+/******/        if(installedModules[moduleId])
+/******/            return installedModules[moduleId].exports;
 /******/
-/******/    // Create a new module (and put it into the cache)
-/******/    var module = installedModules[moduleId] = {
-/******/      i: moduleId,
-/******/      l: false,
-/******/      exports: {}
+/******/        // Create a new module (and put it into the cache)
+/******/        var module = installedModules[moduleId] = {
+/******/            i: moduleId,
+/******/            l: false,
+/******/            exports: {}
+/******/        };
+/******/
+/******/        // Execute the module function
+/******/        modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/        // Flag the module as loaded
+/******/        module.l = true;
+/******/
+/******/        // Return the exports of the module
+/******/        return module.exports;
+/******/    }
+/******/
+/******/
+/******/    // expose the modules object (__webpack_modules__)
+/******/    __webpack_require__.m = modules;
+/******/
+/******/    // expose the module cache
+/******/    __webpack_require__.c = installedModules;
+/******/
+/******/    // identity function for calling harmony imports with the correct context
+/******/    __webpack_require__.i = function(value) { return value; };
+/******/
+/******/    // define getter function for harmony exports
+/******/    __webpack_require__.d = function(exports, name, getter) {
+/******/        if(!__webpack_require__.o(exports, name)) {
+/******/            Object.defineProperty(exports, name, {
+/******/                configurable: false,
+/******/                enumerable: true,
+/******/                get: getter
+/******/            });
+/******/        }
 /******/    };
 /******/
-/******/    // Execute the module function
-/******/    modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/    // getDefaultExport function for compatibility with non-harmony modules
+/******/    __webpack_require__.n = function(module) {
+/******/        var getter = module && module.__esModule ?
+/******/            function getDefault() { return module['default']; } :
+/******/            function getModuleExports() { return module; };
+/******/        __webpack_require__.d(getter, 'a', getter);
+/******/        return getter;
+/******/    };
 /******/
-/******/    // Flag the module as loaded
-/******/    module.l = true;
+/******/    // Object.prototype.hasOwnProperty.call
+/******/    __webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
-/******/    // Return the exports of the module
-/******/    return module.exports;
-/******/  }
+/******/    // __webpack_public_path__
+/******/    __webpack_require__.p = "";
 /******/
-/******/
-/******/  // expose the modules object (__webpack_modules__)
-/******/  __webpack_require__.m = modules;
-/******/
-/******/  // expose the module cache
-/******/  __webpack_require__.c = installedModules;
-/******/
-/******/  // identity function for calling harmony imports with the correct context
-/******/  __webpack_require__.i = function(value) { return value; };
-/******/
-/******/  // define getter function for harmony exports
-/******/  __webpack_require__.d = function(exports, name, getter) {
-/******/    if(!__webpack_require__.o(exports, name)) {
-/******/      Object.defineProperty(exports, name, {
-/******/        configurable: false,
-/******/        enumerable: true,
-/******/        get: getter
-/******/      });
-/******/    }
-/******/  };
-/******/
-/******/  // getDefaultExport function for compatibility with non-harmony modules
-/******/  __webpack_require__.n = function(module) {
-/******/    var getter = module && module.__esModule ?
-/******/      function getDefault() { return module['default']; } :
-/******/      function getModuleExports() { return module; };
-/******/    __webpack_require__.d(getter, 'a', getter);
-/******/    return getter;
-/******/  };
-/******/
-/******/  // Object.prototype.hasOwnProperty.call
-/******/  __webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/  // __webpack_public_path__
-/******/  __webpack_require__.p = "";
-/******/
-/******/  // Load entry module and return exports
-/******/  return __webpack_require__(__webpack_require__.s = 5);
+/******/    // Load entry module and return exports
+/******/    return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2634,7 +2634,7 @@ var messages = {
     "m030a": "Since strict-mode is enabled, changing observed observable values outside actions is not allowed. Please wrap the code in an `action` if this change is intended. Tried to modify: ",
     "m030b": "Side effects like changing state are not allowed at this point. Are you trying to modify state from, for example, the render function of a React component? Tried to modify: ",
     "m031": "Computed values are not allowed to not cause side effects by changing observables that are already being observed. Tried to modify: ",
-    "m032": "* This computation is suspended (not in use by any reaction) and won't run automatically.\n  Didn't expect this computation to be suspended at this point?\n   1. Make sure this computation is used by a reaction (reaction, autorun, observer).\n    2. Check whether you are using this computation synchronously (in the same stack as they reaction that needs it).",
+    "m032": "* This computation is suspended (not in use by any reaction) and won't run automatically.\n    Didn't expect this computation to be suspended at this point?\n   1. Make sure this computation is used by a reaction (reaction, autorun, observer).\n    2. Check whether you are using this computation synchronously (in the same stack as they reaction that needs it).",
     "m033": "`observe` doesn't support the fire immediately property for observable maps.",
     "m034": "`mobx.map` is deprecated, use `new ObservableMap` or `mobx.observable.map` instead",
     "m035": "Cannot make the designated object observable; it is not extensible",
@@ -3201,6 +3201,8 @@ function ajaxFactory(method) {
     var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var base = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://api.github.com';
 
+    var headers = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+
     var req = new XMLHttpRequest();
     var token = localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY);
 
@@ -3240,6 +3242,11 @@ function ajaxFactory(method) {
       req.setRequestHeader('Content-Type', 'application/json');
     }
 
+    //设置自定义的 header
+    for(let header in headers){
+        req.setRequestHeader([header], headers[header]);
+    }
+
     req.send(body);
     return p;
   };
@@ -3265,15 +3272,15 @@ var g;
 
 // This works in non-strict mode
 g = function () {
-  return this;
+    return this;
 }();
 
 try {
-  // This works if eval is allowed (see CSP)
-  g = g || Function("return this")() || (1, eval)("this");
+    // This works if eval is allowed (see CSP)
+    g = g || Function("return this")() || (1, eval)("this");
 } catch (e) {
-  // This works if the window reference is available
-  if ((typeof window === "undefined" ? "undefined" : _typeof(window)) === "object") g = window;
+    // This works if the window reference is available
+    if ((typeof window === "undefined" ? "undefined" : _typeof(window)) === "object") g = window;
 }
 
 // g can still be undefined, but nothing to do about it...
@@ -3413,11 +3420,11 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://gh-oauth.imsun.net', {
+      _utils.http.post('https://cors.wenjunjiang.win/?remoteUrl=https://github.com/login/oauth/access_token', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
-      }, '').then(function (data) {
+      }, '',{Accept:'application/json'}).then(function (data) {
         _this.accessToken = data.access_token;
         _this.update();
       }).catch(function (e) {
