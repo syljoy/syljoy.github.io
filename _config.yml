@@ -13,7 +13,7 @@ comment:
     gitalk:
         clientID: e93e6183465cb2e1c657
         clientSecret: 3995857626e4f96f9e01712bd68fb9d1aacca969
-        repo: https://github.com/syljoy/syljoy.github.io
+        repo: syljoy
         owner: syljoy
         admin: [syljoy]
 
