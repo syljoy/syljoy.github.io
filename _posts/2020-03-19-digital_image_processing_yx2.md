@@ -6,21 +6,25 @@ tags: 数字图像处理 matlab
 ---
 
 # 数字图像处理练习（MATLAB）
+
+- [直方图均衡化处理](#直方图均衡化处理)
+- [滤波器大小对比](https://syljoy.github.io/2020/03/digital_image_processing_yx2/#%E6%BB%A4%E6%B3%A2%E5%99%A8%E5%A4%A7%E5%B0%8F%E5%AF%B9%E6%AF%94)
+- [均值滤波器和中值滤波器](https://syljoy.github.io/2020/03/digital_image_processing_yx2/#均值滤波器和中值滤波器)
+- [伽马变换-图像增强](#%E4%BC%BD%E9%A9%AC%E5%8F%98%E6%8D%A2-%E5%9B%BE%E5%83%8F%E5%A2%9E%E5%BC%BA)
+- 
 > yangxiao_test2
-
-- 直方图均衡化处理
-- 滤波器大小对比
-- 均值滤波器和中值滤波器
-- 伽马变换-图像增强
-
-/images/posts/2020-03-14-markdown/markdown_logo.png
-/images/posts/2020-03-19-digital_image_processing_yx2
 
 ### 直方图均衡化处理
 
 1. 绘制下面四幅图的直方图，并进行直方图均衡化处理 
 
-    ![1.1](/images/posts/2020-03-19-digital_image_processing_yx2/1.1.png)![1.2](/images/posts/2020-03-19-digital_image_processing_yx2/1.2.png)![1.3](/images/posts/2020-03-19-digital_image_processing_yx2/1.3.png)![1.4](/images/posts/2020-03-19-digital_image_processing_yx2/1.4.png)
+<center>
+    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.1.png">
+    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.2.png">
+    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.3.png">
+    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.4.png">
+</center>
+
     
     ```matlab
     I_11 = imread('1.1.png');
@@ -183,9 +187,10 @@ title('中值滤波后图像');
 
 1. 对一幅篇暗的图像进行线性幂变换，体验$\gamma$对图输出结果的影响。
 
-   ![4.1](/images/posts/2020-03-19-digital_image_processing_yx2/4.1.png)![4.2](/images/posts/2020-03-19-digital_image_processing_yx2/4.2.png)
-
-
+<center>
+    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/4.1.png">
+    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/4.2.png">
+</center>
 ​	
 
  - 定义一个伽马变换的函数
