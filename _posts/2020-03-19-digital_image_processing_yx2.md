@@ -12,17 +12,32 @@ tags: 数字图像处理 matlab
 - [均值滤波器和中值滤波器](#均值滤波器和中值滤波器)
 - [伽马变换-图像增强](#伽马变换-图像增强)
 
+
 > yangxiao_test2
+
 
 ### 直方图均衡化处理
 
 1. 绘制下面四幅图的直方图，并进行直方图均衡化处理 
 
-<center>
-    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.1.png" width="197"><img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.2.png" width="197"><img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.3.png" width="197"><img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.4.png" width="197">
-</center>
+<table align="center">
+  <tr>
+    <td>
+      <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.1.png" width="197">
+    </td>
+    <td>
+      <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.2.png" width="197">
+    </td>
+    <td>
+      <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.3.png" width="197">
+    </td>
+    <td>
+      <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.4.png" width="197">
+    </td>
+  </tr>
+</table>
 
-    
+  
     ```matlab
     I_11 = imread('1.1.png');
     J_11 = histeq(I_11);
@@ -96,7 +111,7 @@ tags: 数字图像处理 matlab
    > > type= ‘sobel’，为著名的sobel算子，用于边缘提取，无参数。
    > > type= ‘unsharp’，为对比度增强滤波器，参数alpha用于控制滤波器的形状，范围为[0,1]，默认值为0.2。
    > > type= ‘motion’，为运动模糊算子，有两个参数，表示摄像物体逆时针方向以theta角度运动了len个像素，len的默认值为9，theta的默认值为0;  
-
+<br />
    > imfilter函数：对任意类型数组或多维图像进行滤波，其语法格式为：
    > $$B = imfilter(A,H)$$
    > $$B = imfilter(A,H,option1,option2,...)$$
@@ -183,11 +198,24 @@ title('中值滤波后图像');
 ### 伽马变换-图像增强
 
 1. 对一幅篇暗的图像进行线性幂变换，体验$\gamma$对图输出结果的影响。
-
-<center>
-    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/4.1.png" width="332">
-    <img src="/images/posts/2020-03-19-digital_image_processing_yx2/4.2.png" width="262">
-</center>
+<table align="center">
+  <tr>
+    <td>
+      <img src="/images/posts/2020-03-19-digital_image_processing_yx2/4.1.png" width="332">
+    </td>
+    <td>
+      <img src="/images/posts/2020-03-19-digital_image_processing_yx2/4.2.png" width="262">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      图：4.1.png
+    </td>
+    <td>
+      图：4.2.png
+    </td>
+  </tr>
+</table>
 ​	
 
  - 定义一个伽马变换的函数
@@ -256,5 +284,5 @@ title('中值滤波后图像');
   ![image-20200319015648074](/images/posts/2020-03-19-digital_image_processing_yx2/image-20200319015648074.png)
 
 
-<br><br><br>
-转载请注明：[syljoy](https://syljoy.github.io/) » [数字图像处理练习](https://syljoy.github.io/2020/03/digital_image_processing_yx2/) 
+<br/>
+**转载请注明：**[syljoy](https://syljoy.github.io/) » [数字图像处理练习](https://syljoy.github.io/2020/03/digital_image_processing_yx2/) 
