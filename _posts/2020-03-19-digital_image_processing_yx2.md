@@ -20,7 +20,7 @@ tags: 数字图像处理 matlab
 
 1. 绘制下面四幅图的直方图，并进行直方图均衡化处理 
 
-<table border="0" align="center">
+<table align="center">
   <tr>
     <td>
       <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.1.png" width="197">
@@ -38,6 +38,7 @@ tags: 数字图像处理 matlab
 </table>
 
 
+
 ```matlab
     I_11 = imread('1.1.png');
     J_11 = histeq(I_11);
@@ -50,14 +51,13 @@ tags: 数字图像处理 matlab
     subplot(224),imhist(J_11,64);
     title('均衡化后的直方图');
 ```
-    
-    
+
 
 > imhist(I,n)其中，I为灰度的输入图像，n为指定的灰度级数目，缺省值为256；
-    
+
 运行结果：
     
-    ![image-20200319000816518](/images/posts/2020-03-19-digital_image_processing_yx2/image-20200319000816518.png)
+![image-20200319000816518](/images/posts/2020-03-19-digital_image_processing_yx2/image-20200319000816518.png)
 
 ###  滤波器大小对比
 
