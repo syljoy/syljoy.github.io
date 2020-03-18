@@ -20,7 +20,7 @@ tags: 数字图像处理 matlab
 
 1. 绘制下面四幅图的直方图，并进行直方图均衡化处理 
 
-<table align="center">
+<table border="0" align="center">
   <tr>
     <td>
       <img src="/images/posts/2020-03-19-digital_image_processing_yx2/1.1.png" width="197">
@@ -70,7 +70,7 @@ tags: 数字图像处理 matlab
    - 盒子滤波器
    - 拉普拉斯滤波器
 
-   ```matlab
+```matlab
    I_2 = imread('2.png');
    I_2 = rgb2gray(I_2);
    W3 = fspecial('gaussian',[3,3]); 
@@ -91,10 +91,12 @@ tags: 数字图像处理 matlab
    title('7*7高斯滤波后图像');
    subplot(155); imshow(G9);
    title('9*9高斯滤波后图像');
-   ```
+```
+   
    运行结果：
 
    ![image-20200319003458997](/images/posts/2020-03-19-digital_image_processing_yx2/image-20200319003458997.png)
+
 
    > Fspecial函数：用于创建预定义的滤波算子，其语法格式为：
    > $$h = fspecial(type)$$
@@ -110,8 +112,11 @@ tags: 数字图像处理 matlab
    > > type= ‘prewitt’，为prewitt算子，用于边缘增强，无参数。
    > > type= ‘sobel’，为著名的sobel算子，用于边缘提取，无参数。
    > > type= ‘unsharp’，为对比度增强滤波器，参数alpha用于控制滤波器的形状，范围为[0,1]，默认值为0.2。
-   > > type= ‘motion’，为运动模糊算子，有两个参数，表示摄像物体逆时针方向以theta角度运动了len个像素，len的默认值为9，theta的默认值为0;  
-<br />
+   > > type= ‘motion’，为运动模糊算子，有两个参数，表示摄像物体逆时针方向以theta角度运动了len个像素，len的默认值为9，theta的默认值为0; 
+
+
+
+
    > imfilter函数：对任意类型数组或多维图像进行滤波，其语法格式为：
    > $$B = imfilter(A,H)$$
    > $$B = imfilter(A,H,option1,option2,...)$$
@@ -198,7 +203,7 @@ title('中值滤波后图像');
 ### 伽马变换-图像增强
 
 1. 对一幅篇暗的图像进行线性幂变换，体验$\gamma$对图输出结果的影响。
-<table align="center">
+<table border="0" align="center">
   <tr>
     <td>
       <img src="/images/posts/2020-03-19-digital_image_processing_yx2/4.1.png" width="332">
