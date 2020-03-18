@@ -37,8 +37,8 @@ tags: 数字图像处理 matlab
   </tr>
 </table>
 
-  
-    ```matlab
+
+```matlab
     I_11 = imread('1.1.png');
     J_11 = histeq(I_11);
     subplot(221),imshow(I_11);
@@ -49,11 +49,13 @@ tags: 数字图像处理 matlab
     title('原图像的直方图');
     subplot(224),imhist(J_11,64);
     title('均衡化后的直方图');
-    ```
+```
     
-    > imhist(I,n)其中，I为灰度的输入图像，n为指定的灰度级数目，缺省值为256；
     
-    运行结果：
+
+> imhist(I,n)其中，I为灰度的输入图像，n为指定的灰度级数目，缺省值为256；
+    
+运行结果：
     
     ![image-20200319000816518](/images/posts/2020-03-19-digital_image_processing_yx2/image-20200319000816518.png)
 
@@ -92,7 +94,7 @@ tags: 数字图像处理 matlab
    subplot(155); imshow(G9);
    title('9*9高斯滤波后图像');
 ```
-   
+
    运行结果：
 
    ![image-20200319003458997](/images/posts/2020-03-19-digital_image_processing_yx2/image-20200319003458997.png)
