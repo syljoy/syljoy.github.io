@@ -16,7 +16,7 @@ $D_{KL}(P||Q)=\int_x{p(x){\rm log}\frac{p(x)}{q(x)}} {\rm d}x = \sum_{i=1}^N{p(x
 
 q(x)能在多大程度上表达p(x)所包含的信息，KL散度越大，表达效果越差。
 
-![KL Divergence](/images/posts/KL Divergence/KL_Divergence.png)
+![KL Divergence](/images/posts/2020-07-20-KL Divergence/KL_Divergence.png)
 
 ### 性质：
 
@@ -35,7 +35,7 @@ q(x)能在多大程度上表达p(x)所包含的信息，KL散度越大，表达�
 2. $Q^{*(to)} = \mathop{\arg\max}\limits_{Q} D_{KL}(Q||P)$
    - $Q^{*(to)}$ ：在P有低概率(low probability)的地方，Q也会得到低的位置
 
-![image-20200726100238889](/images/posts/KL Divergence/image-20200726100238889.png)
+![image-20200726100238889](/images/posts/2020-07-20-KL Divergence/image-20200726100238889.png)
 
 如上图所示为：使用一个高斯分布Q近似两个高斯分布混合的P。
 
