@@ -1,3 +1,10 @@
+---
+layout: post
+title: GAN训练难题
+date: 2020-07-22
+tags: 深度学习 GAN
+---
+
 # GAN训练难题
 
 大多数情况下，$P_G$和$P_{data}$是没有重叠（overlapped）的。

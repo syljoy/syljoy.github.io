@@ -1,3 +1,10 @@
+---
+layout: post
+title: JS Divergence
+date: 2020-07-21
+tags: 机器学习
+---
+
 # JS Divergence
 
 JS散度(Jensen-Shannon Divergence)，是基于KL散度的变体，解决了KL散度非对称的问题。一般地，JS 散度是对称的，其取值是 0 到 1 之间。
